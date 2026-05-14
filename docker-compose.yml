@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres-employee:
+    image: postgres:latest
+    container_name: postgres_employee
+    ports:
+      - "5455:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=employee

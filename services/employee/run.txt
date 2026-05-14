@@ -1,0 +1,31 @@
+# Backend (si pas déjà lancé)
+cd services/employee
+.\mvnw.cmd spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
+
+# Frontend
+cd hrm-frontend
+npm install
+npm run dev -- --host
+
+Admin: Imed Azouzi / 123456
+User: Yassine Benali / 123456
+
+
+
+
+
+
+
+
+
+
+# Terminal 2: Frontend (port 5173)
+cd c:\Users\Darkk\Downloads\imed_p6\hrm-master\hrm-frontend
+npm run dev -- --host
+
+cd services\employee
+java -jar target\employee-0.0.1-SNAPSHOT.jar --server.port=8081
+
+ou 
+cd services\employee
+.\mvnw.cmd spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
